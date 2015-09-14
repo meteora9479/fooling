@@ -5,8 +5,8 @@ layers {
   top: "data"
   top: "label"
   image_data_param {
-    source: "/home/anh/workspace/sferes/exp/images/imagenet/image_list.txt"
-    mean_file: "/home/anh/src/caffe/data/ilsvrc12/imagenet_mean.binaryproto"
+    source: "/home/yusheng/Workspace/fooling/sferes/exp/images/imagenet/image_list.txt"
+    mean_file: "/home/yusheng/Worksapce/fooling/caffe/data/ilsvrc12/imagenet_mean.binaryproto"
     batch_size: 10
     crop_size: 227
     mirror: false
