@@ -73,6 +73,7 @@ def set_options(opt):
     opt.add_option('--rpath', type='string', help='set rpath', dest='rpath')
     opt.add_option('--includes', type='string', help='add an include path, e.g. /home/mandor/include', dest='includes')
     opt.add_option('--libs', type='string', help='add a lib path, e.g. /home/mandor/lib', dest='libs')
+    opt.add_option('--libs2', type='string', help='add a lib path, e.g. /home/mandor/lib', dest='libs2')
     opt.add_option('--cpp11', type='string', help='force c++-11 compilation [--cpp11=yes]', dest='cpp11')
 
     # exp commands
@@ -185,6 +186,8 @@ def configure(conf):
     # link flags
     if Options.options.libs:
         conf.env.append_value("LINKFLAGS", "-L" + Options.options.libs)
+    if Options.options.libs2:
+        conf.env.append_value("LINKFLAGS", "-L" + Options.options.libs2)
 
     if Options.options.includes :
         common_flags += " -I" + Options.options.includes + ' '

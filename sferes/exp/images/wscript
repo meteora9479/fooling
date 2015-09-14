@@ -5,10 +5,10 @@ def build(bld):
     obj.source = 'dl_map_elites_images_imagenet_direct_encoding.cpp'
     #obj.source = 'dl_rank_simple_images_mnist_direct_encoding.cpp'
     #obj.source = 'dl_rank_simple_images.cpp'    
-    obj.includes = '. ../../ /usr/local/cuda-6.0/include'
+    obj.includes = '. ../../ ../../include /usr/include/eigen3 /usr/local/cuda-7.0/include'
     obj.uselib_local = 'sferes2'
     obj.uselib = ''
     obj.cxxflags = ['-std=c++11']
     obj.target = 'images'
     obj.uselib_local = 'sferes2'
-    obj.lib=['png', 'cudart', 'caffe', 'opencv_core', 'opencv_highgui', 'opencv_imgproc', 'lmdb', 'glog']
+    obj.lib=[ 'png', 'cudart', 'caffe', 'opencv_core', 'opencv_highgui', 'opencv_imgproc', 'lmdb', 'glog']

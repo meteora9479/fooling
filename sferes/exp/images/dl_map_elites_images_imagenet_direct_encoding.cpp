@@ -105,8 +105,8 @@ struct Params
 // Initialize the parameter files for Caffe network.
 #ifdef LOCAL_RUN
 
-const std::string Params::image::model_definition = "/home/anh/src/model/imagenet_deploy_image_memory_data.prototxt";
-const std::string Params::image::pretrained_model = "/home/anh/src/model/caffe_reference_imagenet_model";
+const std::string Params::image::model_definition = "/home/yusheng/Workspace/fooling/model/imagenet_deploy_image_memory_data.prototxt";
+const std::string Params::image::pretrained_model = "/home/yusheng/Workspace/fooling/model/caffe_reference_imagenet_model";
 
 #else
 
